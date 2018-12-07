@@ -1,0 +1,74 @@
+intents:
+- greet
+- affirm
+- goodbye
+- thanks
+- restaurant_search
+- medical
+- joke
+
+
+entities:
+- name
+
+
+slots:
+  name:
+    type: text
+
+
+actions:
+- utter_name
+- utter_thanks
+- utter_greet
+- utter_goodbye
+- utter_medical
+- action_restaurant_search
+- action_joke
+
+
+templates:
+  utter_greet:
+    - "您好{name}!，我是机器人小热，很高兴为您服务。"
+    - "你好{name}!，我是小热，可以帮您办理流量套餐，话费查询等业务。"
+    - "hi{name}!，人家是小热，有什么可以帮您吗。"
+  utter_goodbye:
+    - "再见{name}，为您服务很开心"
+    - "Bye{name}， 下次再见"
+  utter_default:
+    - "您说什么"
+    - "您能再说一遍吗，我没听清"
+  utter_thanks:
+    - "不用谢"
+    - "我应该做的"
+    - "您开心我就开心"
+  utter_medical:
+    - "现在感觉怎么样？"
+    - "需要什么帮助吗？"
+    - "你还好吗？"
+#  utter_ask_morehelp:
+#    - "还有什么能帮您吗"
+#    - "您还想干什么"
+#  utter_ask_time:
+#    - "你想查哪个时间段的"
+#    - "你想查几月份的"
+#  utter_ask_package:
+#    - "我们现在支持办理流量套餐：套餐一：二十元包月三十兆；套餐二：四十元包月八十兆，请问您需要哪个？"
+#    - "我们有如下套餐供您选择：套餐一：二十元包月三十兆；套餐二：四十元包月八十兆，请问您需要哪个？"
+#  utter_ack_management:
+#    - "已经为您办理好了{item}"
+
+
+#templates:
+#  utter_name:
+#  - text: "Hey there! Tell me your name."
+#
+#  utter_greet:
+#  - text: "Nice to you meet you {name}. How can I help?"
+#
+#  utter_goodbye:
+#  - text: "Talk to you later!"
+#
+#  utter_thanks:
+#  - text: "My pleasure."
+  
